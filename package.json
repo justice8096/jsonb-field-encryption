@@ -1,0 +1,47 @@
+{
+  "name": "jsonb-field-encryption",
+  "version": "1.0.0",
+  "description": "AES-256-GCM encryption for JSONB fields in Node.js databases",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "encryption",
+    "aes-256-gcm",
+    "jsonb",
+    "postgres",
+    "database",
+    "field-level",
+    "crypto"
+  ],
+  "author": "Justice",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/jsonb-field-encryption"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/**/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ]
+}
