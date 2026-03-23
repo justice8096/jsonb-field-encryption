@@ -47,3 +47,16 @@ ENCRYPTION_MASTER_KEY=<64 hex chars>   # 32-byte key
 - Graceful passthrough when no key is set (stores plaintext, warns once)
 - Production startup validation warns if key is missing
 - decryptField auto-detects encrypted vs plaintext values
+
+
+## LLM Compliance Integration
+Field-level encryption directly supports data protection requirements under GDPR, EU AI Act, and other privacy regulations.
+
+### Applicable Compliance Areas
+- **Privacy Impact Assessment** (Template 07) — Encryption is a key technical measure for PII protection
+- **Data Subject Rights** (Template 11) — Encrypted fields support right-to-erasure by key rotation
+- **Security Assessment** (Template 15) — AES-256-GCM with per-field IV is evidence of security-by-design
+- **Consent Records** (Template 10) — Encrypting consent data protects it from unauthorized access
+
+### As Compliance Evidence
+Using this library is itself compliance evidence. Document: which fields are encrypted, key management procedures, and the encryption standard (AES-256-GCM) in the security assessment template.
